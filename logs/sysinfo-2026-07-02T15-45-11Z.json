@@ -1,0 +1,11 @@
+{
+  "Hostname": "ThinkPad-X13-Gen-1",
+  "uptime": 5677,
+  "CPU Cores": 8,
+  "Total RAM (GB)": 14.78,
+  "Used RAM (GB)": 5.14,
+  "Network Interfaces": ["enp0s31f6", "lo", "wlp0s20f3"],
+  "Total Disk Space (GB)": 230.65,
+  "Used Disk Space (GB)": 24.64,
+  "Timestamp": "2026-07-02T15:45:11Z"
+}

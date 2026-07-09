@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e   # Exit immediately if a command exits with a non-zero status
+set -u   # Treat unset variables as an error and exit immediately
+
 # log-sysinfo.sh
 # Capture system information and output as JSON
 
@@ -46,7 +49,7 @@ interfaces_json=$(echo $network_interfaces | xargs | sed 's/ /", "/g' | sed 's/^
 cat <<EOF > "$filename"
 {
   "Hostname": "$my_hostname",
-  "uptime": $sys_uptime,
+  "uptime": "$sys_uptime seconds",
   "CPU Cores": $cpu_cores,
   "Total RAM (GB)": $ram_total_gb,
   "Used RAM (GB)": $ram_used_gb,
